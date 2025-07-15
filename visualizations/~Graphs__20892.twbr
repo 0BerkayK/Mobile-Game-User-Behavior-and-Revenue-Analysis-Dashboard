@@ -1,0 +1,1358 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Graphs_17525986128080' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dau' inline='true' name='federated.0oun6840nzddqm1gmo1dx0oaqady' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dau' name='textscan.1pwa4z60dgqib018jwf520dpumf1'>
+            <connection class='textscan' directory='C:/Users/berka/OneDrive/Masaüstü/rollic/scripts/outputs' filename='dau.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='retention' name='textscan.1pbg4xy0tq1vkw1fm0kt50lonkky'>
+            <connection class='textscan' directory='C:/Users/berka/OneDrive/Masaüstü/rollic/scripts/outputs' filename='retention.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1pwa4z60dgqib018jwf520dpumf1' name='dau.csv' table='[dau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='tr_TR'>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='integer' name='dau' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;tr&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₺&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;tr_TR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[dau.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dau.csv_53F62C5F82204A9D87B9C19F6648E918]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dau</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dau]</local-name>
+            <parent-name>[dau.csv]</parent-name>
+            <remote-alias>dau</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dau.csv_53F62C5F82204A9D87B9C19F6648E918]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='dau.csv' datatype='table' name='[__tableau_internal_object_id__].[dau.csv_53F62C5F82204A9D87B9C19F6648E918]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[dau]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[dau.csv_53F62C5F82204A9D87B9C19F6648E918]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:dau.csv_53F62C5F82204A9D87B9C19F6648E918:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[dau]' derivation='Sum' name='[sum:dau:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/berka/AppData/Local/Temp/TableauTemp/#TableauTemp_1ca8gt71ta1vl413g66li17ou0vd.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dau.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dau</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[dau]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dau</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0oun6840nzddqm1gmo1dx0oaqady].[__tableau_internal_object_id__].[cnt:dau.csv_53F62C5F82204A9D87B9C19F6648E918:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0oun6840nzddqm1gmo1dx0oaqady]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0oun6840nzddqm1gmo1dx0oaqady].[sum:dau:qk]:2&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0oun6840nzddqm1gmo1dx0oaqady].[sum:dau:qk]:1&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0oun6840nzddqm1gmo1dx0oaqady].[sum:dau:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='dau.csv' id='dau.csv_53F62C5F82204A9D87B9C19F6648E918'>
+            <properties context=''>
+              <relation connection='textscan.1pwa4z60dgqib018jwf520dpumf1' name='dau.csv' table='[dau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='tr_TR'>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='integer' name='dau' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='ltv' inline='true' name='federated.1xwaksu0mh0oji1999k220rgzzj3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ltv' name='textscan.0ah79310fimz8d15eypjf0iudhqx'>
+            <connection class='textscan' directory='C:/Users/berka/OneDrive/Masaüstü/rollic/scripts/outputs' filename='ltv.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ah79310fimz8d15eypjf0iudhqx' name='ltv.csv' table='[ltv#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='tr_TR'>
+            <column datatype='integer' name='user_id' ordinal='0' />
+            <column datatype='date' name='register_date' ordinal='1' />
+            <column datatype='string' name='lifetime_value' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ltv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;tr&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₺&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;tr_TR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[ltv.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltv.csv_C6F71273BDE94DC9AC02EEC84AE99200]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>register_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[register_date]</local-name>
+            <parent-name>[ltv.csv]</parent-name>
+            <remote-alias>register_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ltv.csv_C6F71273BDE94DC9AC02EEC84AE99200]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lifetime_value</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lifetime_value]</local-name>
+            <parent-name>[ltv.csv]</parent-name>
+            <remote-alias>lifetime_value</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LTR_RTR' />
+            <object-id>[ltv.csv_C6F71273BDE94DC9AC02EEC84AE99200]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ltv.csv' datatype='table' name='[__tableau_internal_object_id__].[ltv.csv_C6F71273BDE94DC9AC02EEC84AE99200]' role='measure' type='quantitative' />
+      <column aggregation='CountD' datatype='real' datatype-customized='true' name='[lifetime_value]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[user_id]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[ltv.csv_C6F71273BDE94DC9AC02EEC84AE99200]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:ltv.csv_C6F71273BDE94DC9AC02EEC84AE99200:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[lifetime_value]' derivation='Avg' name='[avg:lifetime_value:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[lifetime_value]' derivation='Count' name='[cnt:lifetime_value:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[lifetime_value]' derivation='CountD' name='[ctd:lifetime_value:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[user_id]' derivation='Sum' name='[sum:user_id:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/berka/AppData/Local/Temp/TableauTemp/#TableauTemp_0601zu607naapc14ium9110h40f6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>user_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[user_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ltv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>register_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[register_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>register_date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ltv.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lifetime_value</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[lifetime_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lifetime_value</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ltv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>895</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LTR_RTR' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1xwaksu0mh0oji1999k220rgzzj3].[__tableau_internal_object_id__].[cnt:ltv.csv_C6F71273BDE94DC9AC02EEC84AE99200:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1xwaksu0mh0oji1999k220rgzzj3]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1xwaksu0mh0oji1999k220rgzzj3].[avg:lifetime_value:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1xwaksu0mh0oji1999k220rgzzj3].[cnt:lifetime_value:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1xwaksu0mh0oji1999k220rgzzj3].[ctd:lifetime_value:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1xwaksu0mh0oji1999k220rgzzj3].[none:Calculation_1470143835138826241:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1xwaksu0mh0oji1999k220rgzzj3].[sum:user_id:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='ltv.csv' id='ltv.csv_C6F71273BDE94DC9AC02EEC84AE99200'>
+            <properties context=''>
+              <relation connection='textscan.0ah79310fimz8d15eypjf0iudhqx' name='ltv.csv' table='[ltv#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='tr_TR'>
+                  <column datatype='integer' name='user_id' ordinal='0' />
+                  <column datatype='date' name='register_date' ordinal='1' />
+                  <column datatype='string' name='lifetime_value' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='arpu' inline='true' name='federated.1j76dp81gj01f413pbg380r2pvz4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='arpu' name='textscan.09cuye0050jrnu15t0z2y02pi2uc'>
+            <connection class='textscan' directory='C:/Users/berka/OneDrive/Masaüstü/rollic/scripts/outputs' filename='arpu.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.09cuye0050jrnu15t0z2y02pi2uc' name='arpu.csv' table='[arpu#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='tr_TR'>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='string' name='total_revenue' ordinal='1' />
+            <column datatype='integer' name='active_users' ordinal='2' />
+            <column datatype='string' name='arpu' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[arpu.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;tr&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₺&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;tr_TR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[arpu.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[arpu.csv_B468F98E91D544199C636173ED60D219]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_revenue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[total_revenue]</local-name>
+            <parent-name>[arpu.csv]</parent-name>
+            <remote-alias>total_revenue</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LTR_RTR' />
+            <object-id>[arpu.csv_B468F98E91D544199C636173ED60D219]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>active_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[active_users]</local-name>
+            <parent-name>[arpu.csv]</parent-name>
+            <remote-alias>active_users</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[arpu.csv_B468F98E91D544199C636173ED60D219]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arpu</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[arpu]</local-name>
+            <parent-name>[arpu.csv]</parent-name>
+            <remote-alias>arpu</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LTR_RTR' />
+            <object-id>[arpu.csv_B468F98E91D544199C636173ED60D219]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='arpu.csv' datatype='table' name='[__tableau_internal_object_id__].[arpu.csv_B468F98E91D544199C636173ED60D219]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/berka/AppData/Local/Temp/TableauTemp/#TableauTemp_1n5jwun05q120o1a4qz9e1gg8rld.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>arpu.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_revenue</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[total_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_revenue</remote-alias>
+              <ordinal>1</ordinal>
+              <family>arpu.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LTR_RTR' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>active_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[active_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>active_users</remote-alias>
+              <ordinal>2</ordinal>
+              <family>arpu.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>arpu</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[arpu]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>arpu</remote-alias>
+              <ordinal>3</ordinal>
+              <family>arpu.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LTR_RTR' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='arpu.csv' id='arpu.csv_B468F98E91D544199C636173ED60D219'>
+            <properties context=''>
+              <relation connection='textscan.09cuye0050jrnu15t0z2y02pi2uc' name='arpu.csv' table='[arpu#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='tr_TR'>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='string' name='total_revenue' ordinal='1' />
+                  <column datatype='integer' name='active_users' ordinal='2' />
+                  <column datatype='string' name='arpu' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='churn' inline='true' name='federated.1fqn9o01mu1r801faiw9t1spaqmn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='churn' name='textscan.1hqgc3u1oqokpr1adb49y1w5yt4m'>
+            <connection class='textscan' directory='C:/Users/berka/OneDrive/Masaüstü/rollic/scripts/outputs' filename='churn.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1hqgc3u1oqokpr1adb49y1w5yt4m' name='churn.csv' table='[churn#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='tr_TR'>
+            <column datatype='date' name='register_date' ordinal='0' />
+            <column datatype='integer' name='total_users' ordinal='1' />
+            <column datatype='integer' name='churned_users' ordinal='2' />
+            <column datatype='string' name='churn_rate' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;tr&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₺&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;tr_TR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>register_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[register_date]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>register_date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn.csv_8D925E731F6041F4A4F89CC86E9E8935]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_users]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>total_users</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn.csv_8D925E731F6041F4A4F89CC86E9E8935]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>churned_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[churned_users]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>churned_users</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[churn.csv_8D925E731F6041F4A4F89CC86E9E8935]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>churn_rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[churn_rate]</local-name>
+            <parent-name>[churn.csv]</parent-name>
+            <remote-alias>churn_rate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LTR_RTR' />
+            <object-id>[churn.csv_8D925E731F6041F4A4F89CC86E9E8935]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='churn.csv' datatype='table' name='[__tableau_internal_object_id__].[churn.csv_8D925E731F6041F4A4F89CC86E9E8935]' role='measure' type='quantitative' />
+      <column datatype='string' name='[churn_rate]' role='dimension' type='nominal' />
+      <column-instance column='[churn_rate]' derivation='None' name='[none:churn_rate:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/berka/AppData/Local/Temp/TableauTemp/#TableauTemp_1ch1arp0cqftik155p2lr0bjvcw5.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>register_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[register_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>register_date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>churn.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_users</remote-alias>
+              <ordinal>1</ordinal>
+              <family>churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churned_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[churned_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>churned_users</remote-alias>
+              <ordinal>2</ordinal>
+              <family>churn.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>churn_rate</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[churn_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>churn_rate</remote-alias>
+              <ordinal>3</ordinal>
+              <family>churn.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LTR_RTR' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:churn_rate:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;91.67&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;72.0&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;97.37&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;0.0&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;17.86&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;96.97&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;7.41&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;100.0&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='churn.csv' id='churn.csv_8D925E731F6041F4A4F89CC86E9E8935'>
+            <properties context=''>
+              <relation connection='textscan.1hqgc3u1oqokpr1adb49y1w5yt4m' name='churn.csv' table='[churn#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='tr_TR'>
+                  <column datatype='date' name='register_date' ordinal='0' />
+                  <column datatype='integer' name='total_users' ordinal='1' />
+                  <column datatype='integer' name='churned_users' ordinal='2' />
+                  <column datatype='string' name='churn_rate' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='retention' inline='true' name='federated.0affdmq1yio2sj1e9m9mv0bf468o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='retention' name='textscan.1tvjppm0ykdy2710smae108yihzf'>
+            <connection class='textscan' directory='C:/Users/berka/OneDrive/Masaüstü/rollic/scripts/outputs' filename='retention.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='arpu' name='textscan.15ih4qx04wudgt10pgbmx1yjfk6n'>
+            <connection class='textscan' directory='C:/Users/berka/OneDrive/Masaüstü/rollic/scripts/outputs' filename='arpu.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1tvjppm0ykdy2710smae108yihzf' name='retention.csv' table='[retention#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='tr_TR'>
+            <column datatype='date' name='register_date' ordinal='0' />
+            <column datatype='integer' name='days_since_signup' ordinal='1' />
+            <column datatype='integer' name='retained_users' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[retention.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;tr&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₺&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;tr_TR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>register_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[register_date]</local-name>
+            <parent-name>[retention.csv]</parent-name>
+            <remote-alias>register_date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[retention.csv_AE7F257DF0024901AFF075F77DADFB26]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days_since_signup</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[days_since_signup]</local-name>
+            <parent-name>[retention.csv]</parent-name>
+            <remote-alias>days_since_signup</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[retention.csv_AE7F257DF0024901AFF075F77DADFB26]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retained_users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[retained_users]</local-name>
+            <parent-name>[retention.csv]</parent-name>
+            <remote-alias>retained_users</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[retention.csv_AE7F257DF0024901AFF075F77DADFB26]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Retention Rate' datatype='real' name='[Calculation_1470143835128688640]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[retained_users] / &#13;&#10;{ FIXED [register_date] : MAX( IF [days_since_signup] = 0 THEN [retained_users] END ) }' />
+      </column>
+      <column caption='retention.csv' datatype='table' name='[__tableau_internal_object_id__].[retention.csv_AE7F257DF0024901AFF075F77DADFB26]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[days_since_signup]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[retained_users]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[retention.csv_AE7F257DF0024901AFF075F77DADFB26]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:retention.csv_AE7F257DF0024901AFF075F77DADFB26:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1470143835128688640]' derivation='Sum' name='[sum:Calculation_1470143835128688640:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[days_since_signup]' derivation='Sum' name='[sum:days_since_signup:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[retained_users]' derivation='Sum' name='[sum:retained_users:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/berka/AppData/Local/Temp/TableauTemp/#TableauTemp_0t1tzdo1rt80vs0zvx9lv00b5p24.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/15/2025 04:59:22 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>register_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[register_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>register_date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>retention.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[retention.csv_AE7F257DF0024901AFF075F77DADFB26]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>days_since_signup</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[days_since_signup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>days_since_signup</remote-alias>
+              <ordinal>1</ordinal>
+              <family>retention.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[retention.csv_AE7F257DF0024901AFF075F77DADFB26]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retained_users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[retained_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>retained_users</remote-alias>
+              <ordinal>2</ordinal>
+              <family>retention.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[retention.csv_AE7F257DF0024901AFF075F77DADFB26]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[:Measure Names]' type='shape'>
+            <map to='circle'>
+              <bucket>&quot;[federated.0affdmq1yio2sj1e9m9mv0bf468o].[__tableau_internal_object_id__].[cnt:retention.csv_AE7F257DF0024901AFF075F77DADFB26:qk]&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;[federated.0affdmq1yio2sj1e9m9mv0bf468o].[sum:Calculation_1470143835128688640:qk]&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;[federated.0affdmq1yio2sj1e9m9mv0bf468o].[sum:retained_users:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.0affdmq1yio2sj1e9m9mv0bf468o].[sum:days_since_signup:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='retention.csv' id='retention.csv_AE7F257DF0024901AFF075F77DADFB26'>
+            <properties context=''>
+              <relation connection='textscan.1tvjppm0ykdy2710smae108yihzf' name='retention.csv' table='[retention#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='tr_TR'>
+                  <column datatype='date' name='register_date' ordinal='0' />
+                  <column datatype='integer' name='days_since_signup' ordinal='1' />
+                  <column datatype='integer' name='retained_users' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='ARPU'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Daily ARPU Over Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='arpu' name='federated.1j76dp81gj01f413pbg380r2pvz4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1j76dp81gj01f413pbg380r2pvz4'>
+            <column datatype='string' name='[arpu]' role='dimension' type='nominal' />
+            <column datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[arpu]' derivation='None' name='[none:arpu:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1j76dp81gj01f413pbg380r2pvz4].[none:arpu:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1j76dp81gj01f413pbg380r2pvz4].[none:arpu:nk]</rows>
+        <cols>[federated.1j76dp81gj01f413pbg380r2pvz4].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{CA6DFFB1-A3B8-481A-96E2-CDFDE67BC122}' />
+    </worksheet>
+    <worksheet name='Churn'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Churn Rate by Registration Cohort</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='churn' name='federated.1fqn9o01mu1r801faiw9t1spaqmn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fqn9o01mu1r801faiw9t1spaqmn'>
+            <column datatype='string' name='[churn_rate]' role='dimension' type='nominal' />
+            <column-instance column='[churn_rate]' derivation='None' name='[none:churn_rate:nk]' pivot='key' type='nominal' />
+            <column datatype='date' name='[register_date]' role='dimension' type='ordinal' />
+            <column-instance column='[register_date]' derivation='Day-Trunc' name='[tdy:register_date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1fqn9o01mu1r801faiw9t1spaqmn].[none:churn_rate:nk]' />
+              <text column='[federated.1fqn9o01mu1r801faiw9t1spaqmn].[none:churn_rate:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fqn9o01mu1r801faiw9t1spaqmn].[tdy:register_date:qk]</rows>
+        <cols>[federated.1fqn9o01mu1r801faiw9t1spaqmn].[none:churn_rate:nk]</cols>
+      </table>
+      <simple-id uuid='{7B392E28-B007-45DF-A5FD-4AC3931F6A57}' />
+    </worksheet>
+    <worksheet name='DAU'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Daily Active Users (DAU)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dau' name='federated.0oun6840nzddqm1gmo1dx0oaqady' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0oun6840nzddqm1gmo1dx0oaqady'>
+            <column datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[dau]' role='measure' type='quantitative' />
+            <column-instance column='[dau]' derivation='Sum' name='[sum:dau:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0oun6840nzddqm1gmo1dx0oaqady].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0oun6840nzddqm1gmo1dx0oaqady].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0oun6840nzddqm1gmo1dx0oaqady].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0oun6840nzddqm1gmo1dx0oaqady].[sum:dau:qk]</rows>
+        <cols>[federated.0oun6840nzddqm1gmo1dx0oaqady].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{019911C1-4642-43AB-8CEC-CBE0EA78F453}' />
+    </worksheet>
+    <worksheet name='LTV'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ltv' name='federated.1xwaksu0mh0oji1999k220rgzzj3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xwaksu0mh0oji1999k220rgzzj3'>
+            <column-instance column='[lifetime_value]' derivation='Avg' name='[avg:lifetime_value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lifetime_value]' derivation='Count' name='[cnt:lifetime_value:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' datatype='real' datatype-customized='true' name='[lifetime_value]' role='measure' type='quantitative' />
+            <column datatype='date' name='[register_date]' role='dimension' type='ordinal' />
+            <column-instance column='[register_date]' derivation='Day-Trunc' name='[tdy:register_date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xwaksu0mh0oji1999k220rgzzj3].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.1xwaksu0mh0oji1999k220rgzzj3].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1xwaksu0mh0oji1999k220rgzzj3].[:Measure Names]' />
+              <text column='[federated.1xwaksu0mh0oji1999k220rgzzj3].[avg:lifetime_value:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1xwaksu0mh0oji1999k220rgzzj3].[cnt:lifetime_value:qk]</rows>
+        <cols>[federated.1xwaksu0mh0oji1999k220rgzzj3].[tdy:register_date:qk]</cols>
+      </table>
+      <simple-id uuid='{7167503C-0E2B-409C-BA6E-65FC4CE997F2}' />
+    </worksheet>
+    <worksheet name='Retention'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='retention' name='federated.0affdmq1yio2sj1e9m9mv0bf468o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0affdmq1yio2sj1e9m9mv0bf468o'>
+            <column caption='Retention Rate' datatype='real' name='[Calculation_1470143835128688640]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[retained_users] / &#13;&#10;{ FIXED [register_date] : MAX( IF [days_since_signup] = 0 THEN [retained_users] END ) }' />
+            </column>
+            <column-instance column='[__tableau_internal_object_id__].[retention.csv_AE7F257DF0024901AFF075F77DADFB26]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:retention.csv_AE7F257DF0024901AFF075F77DADFB26:qk]' pivot='key' type='quantitative' />
+            <column caption='retention.csv' datatype='table' name='[__tableau_internal_object_id__].[retention.csv_AE7F257DF0024901AFF075F77DADFB26]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[days_since_signup]' role='measure' type='quantitative' />
+            <column datatype='date' name='[register_date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[retained_users]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1470143835128688640]' derivation='Sum' name='[sum:Calculation_1470143835128688640:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[days_since_signup]' derivation='Sum' name='[sum:days_since_signup:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[retained_users]' derivation='Sum' name='[sum:retained_users:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[register_date]' derivation='Day-Trunc' name='[tdy:register_date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0affdmq1yio2sj1e9m9mv0bf468o].[__tableau_internal_object_id__].[cnt:retention.csv_AE7F257DF0024901AFF075F77DADFB26:qk]' />
+              <color column='[federated.0affdmq1yio2sj1e9m9mv0bf468o].[sum:Calculation_1470143835128688640:qk]' />
+              <text column='[federated.0affdmq1yio2sj1e9m9mv0bf468o].[sum:retained_users:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0affdmq1yio2sj1e9m9mv0bf468o].[sum:days_since_signup:qk]</rows>
+        <cols>[federated.0affdmq1yio2sj1e9m9mv0bf468o].[tdy:register_date:qk]</cols>
+      </table>
+      <simple-id uuid='{2092BA78-468F-4E8D-8354-DAA7C63DDE8A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98130' id='5' param='horz' type-v2='layout-flow' w='99064' x='468' y='935'>
+            <zone h='98130' id='3' type-v2='layout-basic' w='28847' x='468' y='935'>
+              <zone h='98130' id='7' name='Retention' w='28847' x='468' y='935'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='1200' h='98130' id='4' is-fixed='true' param='vert' type-v2='layout-flow' w='70217' x='29315' y='935'>
+              <zone h='5374' id='6' name='DAU' pane-specification-id='3' param='[federated.0oun6840nzddqm1gmo1dx0oaqady].[:Measure Names]' type-v2='color' w='70217' x='29315' y='935'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7594' id='8' name='Retention' pane-specification-id='0' param='[federated.0affdmq1yio2sj1e9m9mv0bf468o].[sum:Calculation_1470143835128688640:qk]' type-v2='color' w='70217' x='29315' y='6309'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='12384' id='9' name='Retention' pane-specification-id='0' param='[federated.0affdmq1yio2sj1e9m9mv0bf468o].[__tableau_internal_object_id__].[cnt:retention.csv_AE7F257DF0024901AFF075F77DADFB26:qk]' type-v2='size' w='70217' x='29315' y='13903'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='33294' id='1' name='DAU' w='28847' x='351' y='1752'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='padding' value='1' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{F8E0275A-852F-4029-A3ED-C861DC09B338}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='114'>
+    <window class='worksheet' name='DAU'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0oun6840nzddqm1gmo1dx0oaqady].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{57FF72D4-85AB-4EFC-B8BF-57574C546128}' />
+    </window>
+    <window class='worksheet' name='Retention'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0affdmq1yio2sj1e9m9mv0bf468o].[sum:Calculation_1470143835128688640:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0affdmq1yio2sj1e9m9mv0bf468o].[__tableau_internal_object_id__].[cnt:retention.csv_AE7F257DF0024901AFF075F77DADFB26:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{989BD575-0375-4B70-A61F-9861A54CF7E3}' />
+    </window>
+    <window class='worksheet' name='ARPU'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D87211B1-61CE-48EF-B6CD-B4ED1E44E8E7}' />
+    </window>
+    <window class='worksheet' name='Churn'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fqn9o01mu1r801faiw9t1spaqmn].[none:churn_rate:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4F63487E-EF6A-47BB-A2B2-42B04950C059}' />
+    </window>
+    <window class='worksheet' name='LTV'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1xwaksu0mh0oji1999k220rgzzj3].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{75E3718F-F7C7-4DD0-AB05-A4CC657DD469}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='DAU'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Retention'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='1' />
+      <simple-id uuid='{40C156CA-D80E-46A1-91C3-D0562E9A26D6}' />
+    </window>
+  </windows>
+</workbook>
